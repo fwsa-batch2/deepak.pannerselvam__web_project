@@ -1,7 +1,7 @@
 let pageon=[]
 
 function placeholder(){
-    const user= JSON.parse(localStorage.getItem('details'))
+    const user= JSON.parse(localStorage.getItem("details"))
     if (user){
 
     }
@@ -11,7 +11,7 @@ function SubmitHandler(){
     event.preventDefault();
     const email = document.getElementById("user").value;
     const password = document.getElementById("password").value;
-    const details = JSON.parse(localStorage.getItem('details'))
+    const details = JSON.parse(localStorage.getItem("details"))
     let login = details.length;
 
     let isEmailAlreadyExist = false;
@@ -23,19 +23,18 @@ function SubmitHandler(){
         {
             isEmailAlreadyExist = true;
             break;
+            
         }
         
     }
 
     
-    if(isEmailAlreadyExist !== false){
-        alert("error");
-        // ndow.location.href ="#"; 
+    if(isEmailAlreadyExist){
+        // window.location.href ="../index.html";
     }
     else{
-        window.location.href ="../index.html"; 
-
+        alert("error");
     }
-
+    
 
 }
