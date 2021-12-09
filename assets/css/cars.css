@@ -62,7 +62,7 @@
 .car img{
     width: 30%;
     height: 30%;
-    margin: -350px 3px 4px 1285px;
+    margin: -350px 3px 4px 1291px;
 }
 .table table{
       width: 40%;
@@ -72,19 +72,21 @@
 .table table tr th{
     font-size: 1.5vw;
     padding: 15px 4px;
+    border-radius: 5px 3px 4px 5px;
 }
 .table table tr th select{
     width: 80%;
     border: none;
     outline-style: none;
-    background-color: #fff;
+    background-color:#FEFCFF;
     font-size: 1.5vw;
 } 
 .color{
     background-color:#d43242 ;
+    color: #fff;
 }
 .white{
-    background-color: #fff;
+    background-color: #FEFCFF;
 }
 
 div.gallery {
@@ -107,10 +109,13 @@ div.gallery {
   
   div.desc {
     width: 270px;
+    height: 80px;
     padding: 15px;
     text-align: center;
-    background-color: #d43242;
-    color: #fff;
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    font: bold;
   }
 .gallimg{
     display: flex;
@@ -119,5 +124,5 @@ div.gallery {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: black;    
 }

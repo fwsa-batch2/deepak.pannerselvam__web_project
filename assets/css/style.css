@@ -33,11 +33,21 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
+    padding: 35px 0px 10px 502px;
+}
+
+.button{
+    background-color: #d43242;
+    color:#fff;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
 }
 
 .header .nav-bar .logo{
     margin-left: 50px;
+   
 }
 
 .header .nav-bar .logo a{
@@ -179,4 +189,9 @@ li{
     height: 550px;
     margin: auto;
     float: right;
+}
+
+.sign{
+    position: relative;
+    right: 53vh;
 }
