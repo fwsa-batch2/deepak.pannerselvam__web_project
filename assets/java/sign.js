@@ -21,4 +21,6 @@ function SubmitHandler(){
 
     pageon.push(details)
     localStorage.setItem("details", JSON.stringify(pageon))
+    alert("Welcome!You have registered successfully.")
+    window.location.href="login.html";
 }

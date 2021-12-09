@@ -13,22 +13,29 @@ function SubmitHandler(){
     const password = document.getElementById("password").value;
     const details = JSON.parse(localStorage.getItem('details'))
     let login = details.length;
+
     let isEmailAlreadyExist = false;
 
     for(i=0;i<login;i++){
     let a = details[i].email;
     let user_pass=details[i].password;
-    if(email == a && password==user_pass) 
-    {
-        isEmailAlreadyExist = true;
-        break;
-    }
-    
-    }
-    if(isEmailAlreadyExist!==false){
-        alert("error");
+        if(email == a && password==user_pass) 
+        {
+            isEmailAlreadyExist = true;
+            break;
+        }
         
     }
-   window.location.href ="../index.html"; 
+
+    
+    if(isEmailAlreadyExist !== false){
+        alert("error");
+        // ndow.location.href ="#"; 
+    }
+    else{
+        window.location.href ="../index.html"; 
+
+    }
+
 
 }
