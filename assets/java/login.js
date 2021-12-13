@@ -25,7 +25,7 @@ function SubmitHandler(){
     }
     else{
        
-        alert("email already exist");
+        alert("error");
     }
  }
  function emailcheck( currentemail){
