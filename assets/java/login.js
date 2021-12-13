@@ -25,7 +25,7 @@ function SubmitHandler(){
     }
     else{
        
-        alert("error");
+        alert("error messages");
     }
  }
  function emailcheck( currentemail){

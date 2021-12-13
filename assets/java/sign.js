@@ -24,12 +24,12 @@ function SubmitHandler(){
         alert("email already exist");
     }
     else if(password != cpassword){
-        alert("please cheack passwords")
+        alert("please check password")
     }
     else{
         pageon.push(details);
         localStorage.setItem("customer_details",JSON.stringify(pageon))
-        window.location.href="../index.html"
+        window.location.href="./../pages/login.html"
     }
  }
  function emailcheck( currentemail){
