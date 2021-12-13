@@ -2,10 +2,11 @@ let pageon=[]
 
 function placeholder(){
     const user= JSON.parse(localStorage.getItem('details'))
-    if (user){
-
+    if (user !=null){
+        pageon = user;
     }
-}
+} 
+placeholder();
 
 function SubmitHandler(){
     event.preventDefault();
@@ -18,22 +19,33 @@ function SubmitHandler(){
         "password":password,
         "cpassword":cpassword,
     }
-    pageon.push(details)
-    localStorage.setItem("details", JSON.stringify(pageon));
-    let user1 = JSON.parse(localStorage.getItem('details'));
-    let user2= user1.length;
-    let user3= false;
-    for(i=0;i<user2;i++){
-        if(email == user1[i].email){
-            user3=true;
-            break;
-        }   
+    const emailalreadyexist=emailcheck(email)
+    if(emailalreadyexist){
+        alert("email already exist");
     }
-    
-    if(user3){
-        alert("E-mail already exist");
+    else if(password != cpassword){
+        alert("please cheack passwords")
     }
     else{
-alert("Welcome!You have registered successfully.")
-    window.location.href="login.html";}
+        pageon.push(details);
+        localStorage.setItem("customer_details",JSON.stringify(pageon))
+        window.location.href="../index.html"
+    }
+ }
+ function emailcheck( currentemail){
+ let user2=JSON.parse(localStorage.getItem("customer_details"));
+ let user3= false;
+ 
+ if(user2){
+ for(i=0;i<user2.length;i++){
+     const user=user2[i]
+     const email=user.email
+     if(currentemail == email){
+         user3=true;
+         break;
+     }   
+    }
+    return user3
 }
+}
+onpageload();
