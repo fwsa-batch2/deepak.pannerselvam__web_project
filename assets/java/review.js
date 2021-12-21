@@ -5,10 +5,10 @@ const editBtn = document.querySelector(".edit");
 btn.onclick = ()=>{
     widget.style.display = "none";
     post.style.display = "block";
-    return false;  // compliant
+    return false;  
+}
 editBtn.onclick = ()=>{   
     widget.style.display = "block";
     post.style.display = "none"
-}
-return false;
+    return false;
 }
