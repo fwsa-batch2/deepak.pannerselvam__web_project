@@ -37,8 +37,8 @@ function SubmitHandler(event){
  let user3= false;
  
  if(user2){
- for(i=0;i<user2.length;i++){
-     const user=user2[i]
+ for(var i of user2){
+     const user=i
      const email=user.email
      if(currentemail == email){
          user3=true;
