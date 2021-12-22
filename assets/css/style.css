@@ -57,13 +57,10 @@ li{
 }
 
 .header .nav-bar .menu ul li{
-    margin-right: 30px;
-}
-
-.header .nav-bar .menu ul li{
     font-size: 19px;
     letter-spacing: 2px;
     padding: 10px;
+    margin-right: 30px;
     border-radius: 5px;
     text-transform: capitalize;
     transition: all 0.5s;
