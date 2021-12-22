@@ -33,7 +33,7 @@ function SubmitHandler(){
  let user3= false;
  
  if(user2){
- for(i=0;i<user2.length;i++){
+ for(i = 0;i <user2.length; i++) {
      const user=user2[i]
      const email=user.email
      if(currentemail == email){
