@@ -7,7 +7,7 @@ function placeholder(){
     }
 }
 
-function SubmitHandler(){
+function SubmitHandler(event){
     event.preventDefault();
     const email = document.getElementById("user").value;
     const password = document.getElementById("password").value;
@@ -33,9 +33,8 @@ function SubmitHandler(){
  let user3= false;
  
  if(user2){
-     var i=1;
-    for(i = 0;i <user2.length; i++) {
-     const user=user2[i]
+    for( var i of user2) {
+     const user=i
      const email=user.email
      if(currentemail == email){
          user3=true;
