@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,6 +8,11 @@
     <meta content="#" name="descriptison">
     <meta content="#" name="keywords">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -15,60 +20,60 @@
 
 <body>
     <form onsubmit="signIn()">
-    <section class="header" id="header">
-        <div class="nav-bar">
-            <div class="logo">
-                <a class="sign" herf="#">B.M.W</a>
+        <section class="header" id="header">
+            <div class="nav-bar">
+                <div class="logo">
+                    <a class="sign" herf="#">B.M.W</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./pages/cars.html">Cars</a></li>
+                        <li><a href="./pages/History.html">History</a></li>
+                        <li><a href="./pages/Teach.html">Technology</a></li>
+                        <li><a href="#">Production</a></li>
+                        <li><a href="./pages/review.html">Reviews</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <button class="button" type="submit"><a href="./pages/login.html">sign in</a></button>
+                </div>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="./pages/cars.html">Cars</a></li>
-                    <li><a href="./pages/History.html">History</a></li>
-                    <li><a href="./pages/Teach.html">Technology</a></li>
-                    <li><a href="#">Production</a></li>
-                    <li><a href="./pages/review.html">Reviews</a></li>
-                </ul>
-            
-            </div>
-           <div>
-            <button class="button" type="submit"><a href="./pages/login.html">sign in</a></button>
-           </div>
-        </div>
-        <div class="hero">
-            <div class="row">
-                <div class="left-sec">
-                    <div class="content">
-                        <h2><span>B.M.W</span><br>Z4</h2>
-                        <p>The BMW Z4 is a fun-to-drive car that offers a unique driving experience.
-                            It is a good handler around winding roads.</p>
-                    </div>
-                    <button class="discover-btn">
-                        <a href="">discover</a><span><em class="fa fa-arrow-circle-o-right"></em></span>
-                    </button>
-                    <div class="information">
-                        <div class="production">`
-                            <p>Production</p>
-                            <h2>2009-2016</h2>
+            <div class="hero">
+                <div class="row">
+                    <div class="left-sec">
+                        <div class="content">
+                            <h2><span>B.M.W</span><br>Z4</h2>
+                            <p>The BMW Z4 is a fun-to-drive car that offers a unique driving experience.
+                                It is a good handler around winding roads.</p>
                         </div>
-                        <div class="production">
-                            <p>Designer</p>
-                            <h2>Calvin Luk</h2>
+                        <button class="discover-btn">
+                            <a href="">discover</a><span><em class="fa fa-arrow-circle-o-right"></em></span>
+                        </button>
+                        <div class="information">
+                            <div class="production">`
+                                <p>Production</p>
+                                <h2>2009-2016</h2>
+                            </div>
+                            <div class="production">
+                                <p>Designer</p>
+                                <h2>Calvin Luk</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-sec">
+                        <div class="my-car">
+                            <div><img src="./assets/image/car4.png" alt="rooms of the house."></div>
+                            <div><img src="./assets/image/car5.png" alt="car next img"></div>
+                            <div><img src="./assets/image/car6.png" alt="car next img reload"></div>
                         </div>
                     </div>
                 </div>
-                <div class="right-sec">
-                    <div class="my-car">
-                        <div><img src="./assets/image/car4.png" alt="rooms of the house."></div>
-                        <div><img src="./assets/image/car5.png" alt="car next img"></div>
-                        <div><img src="./assets/image/car6.png" alt="car next img reload"></div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-</form>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+        </section>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/java/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $(".my-car").slick({
