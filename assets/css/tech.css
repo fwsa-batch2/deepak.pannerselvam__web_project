@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #21256e;
+}
+
+.nav1{
+    position: absolute;
+    left: 5.44%;
+    right: 90.66%;
+    top: 5.27%;
+    bottom: 94.49%;
+}
+
+h1{
+    position: absolute;
+    width: 194px;
+    height: 36px;
+    left: 800px;
+    top: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 36px;
+    color: #FFFFFF;
+    filter: blur(2px);
+}
+
+.image1{
+    position: absolute;
+    width: 97.5%;
+    height: 75%;
+    left: 23px;
+    top: 170px;
+}
+
+.have-tag1{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    left: 31px;
+    top: 1000px;
+}
+
+p{
+    position: absolute;
+    width: 648px;
+    height: 217px;
+    left: 1000px;
+    top: 1024px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 34px;
+   line-height: 40px;
+   color: #fff;
+
+}
+
+span{
+    font-weight: normal;
+    font-size: 12px;
+    
+}
+
+
