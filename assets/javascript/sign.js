@@ -8,7 +8,7 @@ function placeholder(){
 } 
 placeholder();
 
-function SubmitHandler(event){
+function registeruser(event){
     event.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;

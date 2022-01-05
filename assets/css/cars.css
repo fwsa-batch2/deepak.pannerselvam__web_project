@@ -81,9 +81,13 @@
     background-color:#FEFCFF;
     font-size: 1.5vw;
 } 
-#color{
-    background-color:#d43242 ;
+
+
+#mybtn{
+    background-color: #d43242;
     color: #fff;
+    width: 7vh;
+    padding: 2px 3px 8px 4px;
 }
 #white{
     background-color: #FEFCFF;
@@ -98,7 +102,7 @@ div.gallery {
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid #d43242;
     color: #fff;
   }
   
@@ -112,8 +116,8 @@ div.gallery {
     height: 80px;
     padding: 15px;
     text-align: center;
-    background-color: #fff;
-    color: black;
+    background-color: #d43242;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
   }
